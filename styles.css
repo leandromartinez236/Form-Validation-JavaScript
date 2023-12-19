@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #dedede;
+  padding: 0 16px;
+}
+.container {
+  position: relative;
+  max-width: 370px;
+  width: 100%;
+  padding: 25px;
+  box-shadow: 0 0 4px #bbb;
+  background-color: #fff;
+}
+.container header {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #202020;
+}
+.container form {
+  margin-top: 30px;
+}
+.container form .field {
+  margin-bottom: 20px;
+}
+.container form .input-field {
+  position: relative;
+  height: 55px;
+  width: 100%;
+}
+.input-field input {
+  height: 100%;
+  width: 100%;
+  padding: 0 15px;
+  border: 1px solid #202020;
+}
+.invalid input {
+  border-color: #d93025;
+}
+.input-field .show-hide {
+  cursor: pointer;
+  position: absolute;
+  right: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.3rem;
+  color: #202020;
+  padding: 3px;
+}
+.field .error {
+  align-items: center;
+  margin-top: 6px;
+  color: #d93025;
+  font-size: 0.9rem;
+  display: none;
+}
+.invalid .error {
+  display: flex;
+}
+.error-icon {
+  margin-right: 6px;
+  font-size: 1rem;
+}
+.create-password .error {
+  align-items: flex-start;
+}
+.create-password .error-icon {
+  margin-top: 4px;
+}
+button {
+  color: #fff;
+  font-size: 1rem;
+  width: 100%;
+  background-color: #202020;
+  border: 1px solid #202020;
+  padding: 18px 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+button:hover {
+  background-color: #fff;
+  color: #202020;
+}

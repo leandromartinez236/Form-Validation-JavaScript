@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>SignUp</header>
+      <form action="#">
+        <div class="field email-field">
+          <div class="input-field">
+            <input class="email" type="email" placeholder="Enter your email" />
+          </div>
+          <span class="error email-error">
+            <i class="error-icon uil uil-exclamation-octagon"></i>
+            <p class="error-text">Please enter a valid email</p>
+          </span>
+        </div>
+        <div class="field create-password">
+          <div class="input-field">
+            <input
+              type="password"
+              class="password"
+              placeholder="Enter your password"
+            />
+            <i class="show-hide uil uil-eye"></i>
+          </div>
+          <span class="error password-error">
+            <i class="error-icon uil uil-exclamation-octagon"></i>
+            <p class="error-text">
+              Please enter atleast 8 character with number, symbol, small and
+              capital letter
+            </p>
+          </span>
+        </div>
+        <div class="field confirm-password">
+          <div class="input-field">
+            <input
+              class="cPassword"
+              type="password"
+              placeholder="Confirm Password"
+            />
+            <i class="show-hide uil uil-eye"></i>
+          </div>
+          <span class="error confirm-password-error">
+            <i class="error-icon uil uil-exclamation-octagon"></i>
+            <p class="error-text">Password don't match</p>
+          </span>
+        </div>
+        <button type="submit">Submit Now</button>
+      </form>
+    </div>
+  </body>
+</html>
